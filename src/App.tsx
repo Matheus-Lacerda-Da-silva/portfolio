@@ -1,12 +1,12 @@
+import Home from "./pages/Home/Home";
 
 const App = () => {
-
-
+  
   return (
-    <>
-     App
-    </>
-  )
-}
+    <div>
+      <Home />
+    </div>
+  );
+};
 
-export default App
+export default App;
