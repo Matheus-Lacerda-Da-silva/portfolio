@@ -9,15 +9,15 @@ const About = () => {
                 display: "flex",
                 alignItens: "center",
                 justifyContent: "center",
-                backgroundColor:'#232323'
+                backgroundColor:'#1e1e1e',
+                textAlign: "center",
+                color: "white",
+                px:2
             }}
         >
             <Container maxWidth = "md">
                 <Typography  
-                    variant = "h2"
-                    textAlign="center"
-                    color="white"
-                    gutterBottom
+                    variant = "h2" gutterBottom
                 >
                     About Me
                 </Typography>
@@ -25,10 +25,9 @@ const About = () => {
                 sx={{
                     mt: 4,
                     backgroundColor: '#232323',
-                    padding: "30px",
+                    padding: 4,
                     borderRadius: "12px",
-                    textAlign: "center",
-                    boxShadow: "0 0 15px rbga(0,0,0,0.3)"
+
                 }}
                 >
                 <Typography
