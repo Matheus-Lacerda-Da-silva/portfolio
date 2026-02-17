@@ -1,4 +1,5 @@
-import { Box, Container, Typography } from "@mui/material"; 
+import { Box, Container, Typography } from "@mui/material";
+import { AnimatedBackground } from "../../../../../components/StyledButton/AnimatedBackground/AnimatedBackground";
 
 const About = () => {
     return (
@@ -12,9 +13,26 @@ const About = () => {
                 backgroundColor:'#1e1e1e',
                 textAlign: "center",
                 color: "white",
-                px:2
+                px:2,
+                pt:10,
+                position: "relative",
+                overflow: "hidden"
             }}
         >
+            <Box
+                sx={{
+                    position: "absolute",
+                    width: "500px",
+                    height: "500px",
+                    right: "5%",
+                    top: "50%",
+                    transform: "translateY(-50%)",
+                    opacity: 1.15,
+                    pointerEvents: "none"
+                }}
+            >
+                <AnimatedBackground />
+            </Box>
             <Container maxWidth = "md">
                 <Typography  
                     variant = "h2" gutterBottom
@@ -25,16 +43,15 @@ const About = () => {
                 sx={{
                     mt: 4,
                     backgroundColor: '#232323',
-                    padding: 4,
-                    borderRadius: "12px",
-
+                    padding: 7,
+                    borderRadius: "25px",
                 }}
                 >
                 <Typography
                     color="white"
                     sx={{
-                        lineHeight: 1.8,
-                        fontSize: "1.1rem"
+                        lineHeight: 1.9,
+                        fontSize: "1.2rem"
                     }}
                 >
 Tenho 27 anos e sou estudante de TI, cursando Análise e Desenvolvimento de Sistemas na Unimetrocamp Wyden. Trabalhei por anos na área de vendas, porém, em 2023, percebi que não estava feliz nesse setor. Decidi, então, mudar de carreira para uma área pela qual sempre tive interesse e afinidade. Iniciei minha graduação no início de 2024, estou atualmente no 5º semestre e a conclusão está prevista para dezembro de 2026.
