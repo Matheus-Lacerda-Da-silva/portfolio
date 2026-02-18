@@ -40,6 +40,15 @@ const About = () => {
                     About Me
                 </Typography>
                 <Box
+                    sx={{
+                    width: "60px",
+                    height: "4px",
+                    backgroundColor: "#00df9a",
+                    margin: "0 auto 40px auto",
+                    borderRadius: "2px"
+                    }}
+                />
+                <Box
                 sx={{
                     mt: 4,
                     backgroundColor: '#232323',

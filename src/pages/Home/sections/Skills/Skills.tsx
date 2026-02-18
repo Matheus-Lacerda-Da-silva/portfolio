@@ -1,42 +1,38 @@
 import { Box, Container, Grid, Typography } from "@mui/material"
-import HtmlIcon from "@mui/icons-material/Html"
-import CssIcon from "@mui/icons-material/Css"
-import JavascriptIcon from "@mui/icons-material/Javascript"
-import CodeIcon from "@mui/icons-material/Code"
-import DataObjectIcon from "@mui/icons-material/DataObject"
-import StorageIcon from "@mui/icons-material/Storage"
+import { SiHtml5, SiCss3, SiJavascript, SiPython, SiTypescript, SiReact } from "react-icons/si";
 
 const skills = [
   {
     name: "HTML",
-    icon: <HtmlIcon sx={{ fontSize: 50, color: "#E44D26" }} />,
+    icon: <SiHtml5 size={50} color="#E44D26" />,
     description: "Estruturação semântica e acessível de páginas web."
   },
   {
     name: "CSS",
-    icon: <CssIcon sx={{ fontSize: 50, color: "#1572B6" }} />,
+    icon: <SiCss3 size={50} color="#1572B6" />,
     description: "Estilização moderna com responsividade e animações."
   },
   {
     name: "JavaScript",
-    icon: <JavascriptIcon sx={{ fontSize: 50, color: "#F7DF1E" }} />,
+    icon: <SiJavascript size={50} color="#F7DF1E" />,
     description: "Lógica, manipulação de DOM e interatividade."
   },
   {
     name: "Python",
-    icon: <CodeIcon sx={{ fontSize: 50, color: "#3776AB" }} />,
+    icon: <SiPython size={50} color="#3776AB" />,
     description: "Automação, scripts e fundamentos de back-end."
   },
   {
     name: "TypeScript",
-    icon: <DataObjectIcon sx={{ fontSize: 50, color: "#3178C6" }} />,
+    icon: <SiTypescript size={50} color="#3178C6" />,
     description: "Tipagem estática para aplicações mais seguras."
   },
   {
     name: "React",
-    icon: <StorageIcon sx={{ fontSize: 50, color: "#61DAFB" }} />,
+    icon: <SiReact size={50} color="#61DAFB" />,
     description: "Criação de interfaces modernas e componentizadas."
   }
+
 ]
 
 const Skills = () => {
@@ -76,7 +72,8 @@ const Skills = () => {
         {/* GRID DE SKILLS */}
         <Grid container spacing={4}>
           {skills.map((skill, index) => (
-            <Grid key={index} size={{ xs: 12, sm: 6, md: 4 }}>              <Box
+            <Grid key={index} size={{ xs: 12, sm: 6, md: 4 }}>              
+              <Box textAlign="center"
                 sx={{
                   backgroundColor: "#2a2a2a",
                   padding: 4,
