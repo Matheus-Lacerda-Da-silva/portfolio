@@ -78,17 +78,35 @@ const Skills = () => {
                   backgroundColor: "#2a2a2a",
                   padding: 4,
                   borderRadius: "12px",
-                  textAlign: "center",
-                  transition: "0.3s",
-                  height: "100%",
+                  height: "220px",
+                  position: "relative",
+                  overflow: "hidden",
+                  cursor: "pointer",    
+                  transition: "0.4s",
                   "&:hover": {
                     transform: "translateY(-8px)",
-                    boxShadow: "0 8px 20px rgba(0,0,0,0.3)"
-                  }
+                    boxShadow: "0 8px 20px rgba(0,0,0,0.4)",
+                    background: "linear-gradient(145deg, #2a2a2a, #1f1f1f)"
+                  },
+                  "&:hover .description": {
+                    opacity: 1,
+                    transform: "translateY(0)"
+                  },
+                  "&:hover .icon": {
+                    transform: "translateY(-10px) scale(1.1)"
+                  },
                 }}
               >
-                {skill.icon}
-
+              <Box
+                className="icon"
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  transition: "0.4s"
+                }}
+                >
+                  {skill.icon}
+                </Box>
                 <Typography
                   variant="h6"
                   color="white"
@@ -99,8 +117,18 @@ const Skills = () => {
                 </Typography>
 
                 <Typography
+                  className="description"
                   variant="body2"
-                  color="gray"
+                  sx={{
+                    color: "gray",
+                    position: "absolute",
+                    bottom: 20,
+                    left: 20,
+                    right: 20,
+                    opacity: 0,
+                    transform: "translateY(20px)",
+                    transition: "0.4s"  
+                  }}
                 >
                   {skill.description}
                 </Typography>
