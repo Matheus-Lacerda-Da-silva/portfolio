@@ -26,7 +26,7 @@ const StyledImg = styled("img")(({ theme })=> ({
 
 const Hero = () => {
     return (
-        <StyledHero>       
+        <StyledHero id="home">       
             <Container maxWidth="lg">
                 <Grid container spacing={4} alignItems="center">
                    {/* FOTO */}
@@ -42,8 +42,16 @@ const Hero = () => {
                     </Grid>
                     {/* TEXTO */}
                     <Grid size={{ xs: 12, md: 8 }}>
-                        <Typography color="primary.contrastText" variant="h1" textAlign="center" pb={2}>Matheus Lacerda</Typography>
-                        <Typography color="primary.contrastText" variant="h2" textAlign="center">I'm Front-end developer</Typography>
+                        <Typography 
+                            color="primary.contrastText" 
+                            variant="h1" 
+                            textAlign="center" pb={2}
+                        >
+                            Matheus Lacerda
+                        </Typography>
+                        <Typography color="primary.contrastText" variant="h2" textAlign="center">I'm Front-end developer
+
+                        </Typography>
                         <Grid container display="flex" justifyContent="center" spacing={3} pt={3}>
                             <Box
                                 display="flex"
