@@ -48,7 +48,7 @@ const Skills = () => {
       }}
     >
       <Container maxWidth="lg">
-        {/* TÍTULO */}
+        {/* TITULO */}
         <Typography
           variant="h2"
           textAlign="center"
