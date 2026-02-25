@@ -63,11 +63,13 @@ const About = () => {
                         fontSize: "1.2rem"
                     }}
                 >
-Tenho 27 anos e sou estudante de TI, cursando Análise e Desenvolvimento de Sistemas na Unimetrocamp Wyden. Trabalhei por anos na área de vendas, porém, em 2023, percebi que não estava feliz nesse setor. Decidi, então, mudar de carreira para uma área pela qual sempre tive interesse e afinidade. Iniciei minha graduação no início de 2024, estou atualmente no 5º semestre e a conclusão está prevista para dezembro de 2026.
+I'm 27 years old and an IT student majoring in Systems Analysis and Development at Unimetrocamp Wyden. I worked in sales for several years, but in 2023 I realized I wasn’t happy in that field. I decided to change careers to an area I’ve always been passionate about.
 
-Busco aprender algo novo todos os dias e aplicar esse conhecimento na prática. No momento, tenho maior familiaridade com o Front-end, dominando as linguagens e ferramentas mais utilizadas no mercado — inclusive, este portfólio que você está vendo foi desenvolvido com Vite, React e TypeScript.
+I started my degree in early 2024, and I’m currently in my fifth semester. My graduation is scheduled for December 2026.
 
-Espero que goste do meu trabalho! Caso queira entrar em contato ou visualizar meu currículo, basta clicar nos botões acima. Tenha um ótimo dia!            
+I strive to learn something new every day and apply that knowledge in practice. Currently, I focus on front-end development and have experience with the most widely used languages and tools in the market. In fact, this portfolio was developed using Vite, React, and TypeScript.
+
+I hope you enjoy my work! If you’d like to get in touch or view my resume, just click the buttons above. Have a great day!           
                 </Typography>
                 </Box>
             </Container>

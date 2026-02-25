@@ -5,32 +5,32 @@ const skills = [
   {
     name: "HTML",
     icon: <SiHtml5 size={50} color="#E44D26" />,
-    description: "Estruturação semântica e acessível de páginas web."
+    description: "Semantic and accessible markup focused on SEO, usability, and clean structure."
   },
   {
     name: "CSS",
     icon: <SiCss3 size={50} color="#1572B6" />,
-    description: "Estilização moderna com responsividade e animações."
+    description: "Responsive layouts, modern styling, animations, and scalable design systems"
   },
   {
     name: "JavaScript",
     icon: <SiJavascript size={50} color="#F7DF1E" />,
-    description: "Lógica, manipulação de DOM e interatividade."
+    description: "Interactive and dynamic interfaces using modern ES6+ features and performance best practices."
   },
   {
     name: "Python",
     icon: <SiPython size={50} color="#3776AB" />,
-    description: "Automação, scripts e fundamentos de back-end."
+    description: "Basic automation and back-end fundamentals to support full-stack understanding."
   },
   {
     name: "TypeScript",
     icon: <SiTypescript size={50} color="#3178C6" />,
-    description: "Tipagem estática para aplicações mais seguras."
+    description: "Strong typing for scalable, maintainable, and production-ready front-end applications."
   },
   {
     name: "React",
     icon: <SiReact size={50} color="#61DAFB" />,
-    description: "Criação de interfaces modernas e componentizadas."
+    description: "Component-based architecture for building modern, reusable, and high-performance user interfaces."
   }
 
 ]
@@ -48,7 +48,6 @@ const Skills = () => {
       }}
     >
       <Container maxWidth="lg">
-        {/* TITULO */}
         <Typography
           variant="h2"
           textAlign="center"
@@ -58,7 +57,6 @@ const Skills = () => {
           My Skills
         </Typography>
 
-        {/* Linha verde decorativa */}
         <Box
           sx={{
             width: "60px",
@@ -69,7 +67,6 @@ const Skills = () => {
           }}
         />
 
-        {/* GRID DE SKILLS */}
         <Grid container spacing={4}>
           {skills.map((skill, index) => (
             <Grid key={index} size={{ xs: 12, sm: 6, md: 4 }}>              
