@@ -29,7 +29,6 @@ const Hero = () => {
         <StyledHero id="home">       
             <Container maxWidth="lg">
                 <Grid container spacing={4} alignItems="center">
-                   {/* FOTO */}
                     <Grid size={{ xs: 12, md: 4 }}>
                         <Box position="relative" textAlign="center">
                             <Box position="absolute" width={"150%"} top={-100} right={0}>
@@ -40,7 +39,6 @@ const Hero = () => {
                             </Box>
                         </Box>
                     </Grid>
-                    {/* TEXTO */}
                     <Grid size={{ xs: 12, md: 8 }}>
                         <Typography 
                             color="primary.contrastText" 
@@ -49,8 +47,12 @@ const Hero = () => {
                         >
                             Matheus Lacerda
                         </Typography>
-                        <Typography color="primary.contrastText" variant="h2" textAlign="center">I'm Front-end developer
-
+                        <Typography 
+                            color="primary.contrastText" 
+                            variant="h2" 
+                            textAlign="center"
+                        >
+                            I'm Front-end developer
                         </Typography>
                         <Grid container display="flex" justifyContent="center" spacing={3} pt={3}>
                             <Box
