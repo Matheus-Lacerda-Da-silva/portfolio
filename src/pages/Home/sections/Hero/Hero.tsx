@@ -1,4 +1,6 @@
-import { Box, Container, Grid, styled, Typography } from "@mui/material"
+import { useState } from "react"
+import { Dialog, DialogTitle, DialogContent, DialogActions, Button } from "@mui/material";
+import { Box, Container, Grid, styled, Typography } from "@mui/material";
 import Avatar from "../../../../assets/images/fotomatheus.jpg"
 import DownloadIcon from '@mui/icons-material/Download';
 import EmailIcon from '@mui/icons-material/Email';
@@ -25,6 +27,11 @@ const StyledImg = styled("img")(({ theme })=> ({
 }))
 
 const Hero = () => {
+    const [open, setOpen] = useState(false);
+
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
+
     return (
         <StyledHero id="home">       
             <Container maxWidth="lg">
@@ -72,7 +79,7 @@ const Hero = () => {
                                         Download CV                                        
                                     </Typography>
                                 </StyledButton>
-                                <StyledButton onClick={()=> console.log("contact")}>
+                                <StyledButton onClick={handleOpen}>
                                     <EmailIcon />
                                     <Typography>
                                         Contact me
@@ -83,7 +90,50 @@ const Hero = () => {
                     </Grid>
                 </Grid>
             </Container>
-
+            <Dialog 
+                open={open} 
+                onClose={handleClose}
+                slotProps={{
+                    paper: {
+                        sx: {
+                            backgroundColor: "primary.main",
+                            color: "primary.contrastText",
+                            borderRadius: 3,
+                            padding: 2
+                        }
+                    }
+                }}     
+            >
+                <DialogTitle>Contact me</DialogTitle>
+                <DialogContent>
+                    <Typography sx={{mb: 2 }}>
+                        Email:{" "}
+                        <a href="mailto:matheus.lacerda01@outlook.com" >
+                            matheus.lacerda01@outlook.com
+                        </a>
+                    </Typography>
+                    <Typography>
+                        WhatsApp:{" "}
+                        <a
+                            href="https://wa.me/5519989588144"
+                            target="_blank"
+                            rel="noopener noferrer"
+                        >
+                            Enviar mensagem
+                        </a>
+                    </Typography>
+                </DialogContent>
+                <DialogActions>
+                    <Button 
+                    onClick={handleClose}
+                    sx={{
+                        color: "white"
+                    }}
+                    >
+                        Close
+                    </Button>
+                </DialogActions>
+            </Dialog>                        
         </StyledHero>
     )
 }

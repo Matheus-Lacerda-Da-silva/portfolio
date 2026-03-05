@@ -11,15 +11,15 @@ const projects = [
     tech: "React • TypeScript • MUI"
   },
   {
-    name: "teste 2",
+    name: "Coming soon",
     image: newP,
-    description: "Em costrução",
+    description: "...",
     tech: "..."
   },
   {
-    name: "teste 3",
+    name: "Coming soon",
     image: newP,
-    description: "Em construção.",
+    description: "...",
     tech: "..."
   }
 ]
@@ -37,7 +37,6 @@ const Projects = () => {
             }}
         >
             <Container maxWidth="lg">
-                {/* TITULO */}
                 <Box textAlign="center" mb={6}>
                     <Typography
                     variant="h2"
