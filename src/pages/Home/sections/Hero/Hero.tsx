@@ -59,7 +59,7 @@ const Hero = () => {
                             variant="h2" 
                             textAlign="center"
                         >
-                            I'm Front-end developer
+                            I'm Fullstack Developer
                         </Typography>
                         <Grid container display="flex" justifyContent="center" spacing={3} pt={3}>
                             <Box

@@ -69,28 +69,29 @@ const About = () => {
                         fontSize: { xs: "0.95rem", md: "1.2rem" },
                     }}
                 >
-                    I'm 27 years old and an IT student majoring in Systems Analysis and
-                    Development at Unimetrocamp Wyden. I worked in sales for several
-                    years, but in 2023 I realized I wasn’t happy in that field. I decided
-                    to change careers to an area I’ve always been passionate about.
+                    I'm 27 years old and an IT student majoring in Systems Analysis and 
+                    Development at Unimetrocamp Wyden. After several years working in sales, 
+                    I decided in 2023 to change careers and pursue a field I have always 
+                    been passionate about: technology.
 
                     <br /><br />
 
-                    I started my degree in early 2024, and I’m currently in my fifth
-                    semester. My graduation is scheduled for December 2026.
+                    I started my degree in early 2024 and I'm currently in my final semester, 
+                    with graduation scheduled for December 2026.
+
 
                     <br /><br />
 
-                    I strive to learn something new every day and apply that knowledge in
-                    practice. Currently, I focus on front-end development and have
-                    experience with the most widely used languages and tools in the
-                    market. In fact, this portfolio was developed using Vite, React, and
-                    TypeScript.
+                    I'm a Full Stack Developer focused on building modern web applications. 
+                    I work with technologies such as React, TypeScript, JavaScript, Node.js 
+                    and Python, and I'm constantly improving my programming, problem-solving 
+                    and software development skills through practical projects.
 
                     <br /><br />
 
-                    I hope you enjoy my work! If you’d like to get in touch or view my
-                    resume, just click the buttons above.       
+                    I believe in continuous learning and enjoy turning what I learn 
+                    into practical solutions. I hope you enjoy my work! If you'd like 
+                    to get in touch or view my resume, feel free to use the buttons above.    
                 </Typography>
                 </Box>
             </Container>
